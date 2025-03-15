@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@400;700&display=swap');
+
+html {
+    transition: all 0.3s ease-in-out;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* o 700 si quieres la versión bold */
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: clamp(24px, 5vw, 35px); /* Tamaño responsivo entre 24px y 35px */
+  font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  font-size: clamp(18px, 4vw, 23px);
+  font-family: 'Pacifico', cursive;
+}
+
+h3 {
+  font-size: clamp(16px, 3vw, 20px);
+  font-family: 'Pacifico', cursive;
+}
+
+p {
+  font-size: clamp(16px, 3vw, 20px);
+  font-family: 'Roboto Mono', monospace;
+  padding: 0 10px; /* Añade padding horizontal para evitar que el texto toque los bordes */
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #d3393d;
+  font-weight: 900;
+}
+
+footer {
+  background-color: #251d1b;
+  color: #f4f0ec;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 0; /* Elimina el margen superior */
+  padding: 20px 0; /* Añade algo de padding vertical para espaciado interno */
+}
+
+#contenedorPrincipal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header1 {
+    background-image: url(Imágenes/Fondo1.jpg);
+    min-height: 50vh; /* Cambiamos height fijo por min-height */
+    width: 100%;
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio */
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Reducimos el padding para pantallas pequeñas */
+    box-sizing: border-box;
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
+    position: relative; /* Añadimos posición relativa al header */
+    transition: all 0.3s ease-in-out;
+}
+
+#header1 h1,  
+#header1 p {
+    margin: 15px 0; /* Espacio vertical entre elementos */
+    max-width: min(800px, 90%); /* Usa el valor más pequeño entre 800px y 90% del contenedor */
+    width: auto; /* Permite que el ancho se ajuste al contenido */
+    text-align: center;
+    word-wrap: break-word; /* Evita que las palabras largas se desborden */
+}
+
+#header1 h1 {
+    margin-top: 100px; /* Dar espacio para el logo y menú */
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 80px; /* Ajusta según el tamaño que necesites */
+    height: auto;
+}
+
+#menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 30px; /* Ajusta según el tamaño que necesites */
+    height: auto;
+    cursor: pointer;
+}
+
+#section1 {
+    background-color: #d3393d;
+    color: #dfd6be;
+    min-height: 50vh; /* Cambiamos height fijo por min-height */
+    width: 100%;
+    
+    /* Configuración de flexbox para centrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Padding uniforme alrededor */
+    padding: 20px; /* Reducimos el padding para pantallas pequeñas */
+    
+    /* Aseguramos que el padding no afecte el tamaño total */
+    box-sizing: border-box;
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ajustamos los elementos dentro de section1 */
+#section1 h1, 
+#section1 h2, 
+#section1 p {
+    margin: 15px 0; /* Espacio vertical entre elementos */
+    max-width: min(800px, 90%); /* Usa el valor más pequeño entre 800px y 90% del contenedor */
+    width: auto; /* Permite que el ancho se ajuste al contenido */
+    text-align: center;
+    word-wrap: break-word; /* Evita que las palabras largas se desborden */
+}
+
+#section2 {
+  background-color: #dfd6be;
+  color: #d3393d;
+  min-height: 50vh; /* Cambiamos height fijo por min-height */
+  width: 100%;
+  
+  /* Configuración de flexbox para centrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Padding uniforme alrededor */
+    padding: 20px; /* Reducimos el padding para pantallas pequeñas */
+
+    /* Aseguramos que el padding no afecte el tamaño total */
+    box-sizing: border-box;
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
+    transition: all 0.3s ease-in-out;
+}
+
+#section2 h1, 
+#section2 h2, 
+#section2 p {
+    margin: 15px 0; /* Espacio vertical entre elementos */
+    max-width: min(800px, 90%); /* Usa el valor más pequeño entre 800px y 90% del contenedor */
+    width: auto; /* Permite que el ancho se ajuste al contenido */
+    text-align: center;
+    word-wrap: break-word; /* Evita que las palabras largas se desborden */
+}
+
+#section3 {
+  background-image: url(Imágenes/Fondo2.jpg);
+  color: white;
+  min-height: 50vh; /* Cambiamos height fijo por min-height */
+  width: 100%;
+  
+  /* Configuración de flexbox para centrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Padding uniforme alrededor */
+  padding: 20px; /* Reducimos el padding para pantallas pequeñas */
+  
+  /* Aseguramos que el padding no afecte el tamaño total */
+  box-sizing: border-box;
+  overflow: auto; /* Permite scroll si el contenido es muy largo */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ajustamos los elementos dentro de section1 */
+#section3 h1, 
+#section3 h2, 
+#section3 p {
+  margin: 15px 0; /* Espacio vertical entre elementos */
+  max-width: min(800px, 90%); /* Usa el valor más pequeño entre 800px y 90% del contenedor */
+  width: auto; /* Permite que el ancho se ajuste al contenido */
+  text-align: center;
+  word-wrap: break-word; /* Evita que las palabras largas se desborden */
+}
+
+#botonDesayuno{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  width: 90%;
+  padding: 10px;
+}
+
+#botonDesayuno:hover{
+  background-color: white;
+  color: #d3393d;
+  transform: scale(0.95);
+}
+
+#contenedorImagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+#contenedorImagenes div {
+  margin: 15px 0; 
+  max-width: 800px; 
+  text-align: center;
+}
+
+#section4 {
+  background-color: #dfd6be;
+  color: #d3393d;
+  min-height: 50vh; /* Cambiamos height fijo por min-height */
+  width: 100%;
+  
+  /* Configuración de flexbox para centrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Padding uniforme alrededor */
+  padding: 20px; /* Reducimos el padding para pantallas pequeñas */
+  
+  /* Aseguramos que el padding no afecte el tamaño total */
+  box-sizing: border-box;
+  overflow: auto; /* Permite scroll si el contenido es muy largo */
+  transition: all 0.3s ease-in-out;
+}
+
+#section5 {
+  background-color: #d3393d;
+  color: #dfd6be;
+  min-height: 50vh; /* Cambiamos height fijo por min-height */
+  width: 100%;
+  
+  /* Mejoramos la configuración de flexbox para centrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Aseguramos que el contenedor esté correctamente dimensionado */
+  box-sizing: border-box;
+  padding: 20px; /* Reducimos el padding para pantallas pequeñas */
+  margin: 0;
+  overflow: auto; /* Permite scroll si el contenido es muy largo */
+  transition: all 0.3s ease-in-out;
+}
+ 
+#section5 h2, 
+#section5 p {
+  margin: 15px auto; /* Cambiamos a auto para centrado horizontal */
+  max-width: min(800px, 90%); /* Usa el valor más pequeño entre 800px y 90% del contenedor */
+  width: auto; /* Permite que el ancho se ajuste al contenido */
+  text-align: center;
+  word-wrap: break-word; /* Evita que las palabras largas se desborden */
+}
+
+@media (min-width: 1024px) {
+  #contenedor__seccion1-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50vh;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #section1,
+  #section2 {
+    flex: 1; /* En lugar de width: 50% */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #section1 h2, #section1 p,
+  #section2 h2, #section2 p {
+    max-width: 80%; /* Reducimos un poco el ancho máximo del contenido */
+    margin: 15px auto;
+  } 
+
+  #contenedorImagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  #imagen3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  #imagen4 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  #contenedor__seccion4-5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50vh;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #section4,
+  #section5 {
+    flex: 1; /* En lugar de width: 50% */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #section4 h2, #section4 p,
+  #section4 h2, #section4 p {
+    max-width: 80%; /* Reducimos un poco el ancho máximo del contenido */
+    margin: 15px auto;
+  }
+  
+}
+
